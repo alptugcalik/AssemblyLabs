@@ -1,0 +1,14 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\delay1.o"
+".\objects\gpioinit_f.o"
+".\objects\initsystick.o"
+".\objects\main.o"
+".\objects\outchar.o"
+".\objects\outstr.o"
+".\objects\pulse.o"
+".\objects\startup.o"
+".\objects\timer.o"
+".\objects\convrt.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\task.map" -o .\Objects\task.axf
